@@ -20,7 +20,7 @@ mod:
 .sources: https://github.com/beckadamtheinventor/SmashingRocks
 .textures: textures
 .title: Smashing Rocks
-.version: 1
+.version: 1.0
 +moditems.imports: ${mod.package}.rocksmasher.RockSmasher
 +resourceexecactions: actions/dirs.json
 +postexecactions: actions/loot_tables.json
