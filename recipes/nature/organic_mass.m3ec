@@ -1,0 +1,8 @@
+@: recipe
+recipe: SmeltingRecipe
+contentid: organic_mass
+ingredient: ${mod.mcpath}:damp_moss
+result: ${mod.mcpath}:organic_mass
+experience: 0.5
+time: 50
+count: 1

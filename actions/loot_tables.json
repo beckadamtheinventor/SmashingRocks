@@ -1,0 +1,47 @@
+[
+	{
+		"action": "makedir",
+		"value": [
+			"src/main/resources/data/minecraft",
+			"src/main/resources/data/minecraft/loot_tables",
+			"src/main/resources/data/minecraft/loot_tables/blocks"
+		]
+	},
+	{
+		"action": "copyf",
+		"source": "${project_path}/json/loot_tables/blocks/deepslate.json",
+		"dest": "${build_path}/src/main/resources/data/minecraft/loot_tables/blocks/deepslate.json"
+	},
+	{
+		"action": "copyf",
+		"source": "${project_path}/json/loot_tables/blocks/stone.json",
+		"dest": "${build_path}/src/main/resources/data/minecraft/loot_tables/blocks/stone.json"
+	},
+	{
+		"action": "copyf",
+		"source": "${project_path}/json/loot_tables/blocks/andesite.json",
+		"dest": "${build_path}/src/main/resources/data/minecraft/loot_tables/blocks/andesite.json"
+	},
+	{
+		"action": "copyf",
+		"source": "${project_path}/json/loot_tables/blocks/diorite.json",
+		"dest": "${build_path}/src/main/resources/data/minecraft/loot_tables/blocks/diorite.json"
+	},
+	{
+		"action": "copyf",
+		"source": "${project_path}/json/loot_tables/blocks/granite.json",
+		"dest": "${build_path}/src/main/resources/data/minecraft/loot_tables/blocks/granite.json"
+	}
+,
+	{
+		"action": "copyf",
+		"source": "${project_path}/json/loot_tables/blocks/calcite.json",
+		"dest": "${build_path}/src/main/resources/data/minecraft/loot_tables/blocks/calcite.json"
+	}
+,
+	{
+		"action": "copyf",
+		"source": "${project_path}/json/loot_tables/blocks/tuff.json",
+		"dest": "${build_path}/src/main/resources/data/minecraft/loot_tables/blocks/tuff.json"
+	}
+]

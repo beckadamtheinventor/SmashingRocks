@@ -1,0 +1,13 @@
+@: block
+block: SimpleBlock
+contentid: carbonized_masonstone
+droptype: Self
+hardness: ${mc.obsidian.hardness}
+material: STONE
+requiresTool: yes
+resistance: 65535
+sounds: DEEPSLATE
+texture: carbonized_masonstone.png
+title: Carbonized Masonstone
+toolclass: PICKAXES
+toollevel: DIAMOND

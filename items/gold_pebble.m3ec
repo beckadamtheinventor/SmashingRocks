@@ -1,0 +1,5 @@
+@: item
+contentid: gold_pebble
+item: SimpleItem
+texture: gold_pebble.png
+title: Gold Pebble

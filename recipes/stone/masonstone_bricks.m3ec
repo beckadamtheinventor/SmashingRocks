@@ -1,0 +1,9 @@
+@: recipe
+contentid: masonstone_bricks
+count: 4
++itemkeys: A
++items: slateblocktweaker:mason_stone
++pattern: "AA"
++pattern: "AA"
+recipe: ShapedRecipe
+result: slateblocktweaker:masonstone_bricks

@@ -1,0 +1,11 @@
+@: recipe
+recipe: ShapedRecipe
+contentid: water_bucket
++itemkeys: b
++itemkeys: m
++items: minecraft:bucket
++items: ${mod.mcpath}:damp_moss
++pattern: "mmm"
++pattern: " b "
+result: minecraft:water_bucket
+count: 1

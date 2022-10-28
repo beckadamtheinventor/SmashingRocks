@@ -1,0 +1,28 @@
+@: manifest
+mod: 
+.author: BeckATI
+.class: SmashingRocks
+.credits: 
+.description: Smashing!
+.homepage: https://github.com/beckadamtheinventor/SmashingRocks
+.iconItem: diamond_rock_smasher
+.license: GNU GPL v3
+.package: com.beckati.smashingrocks
+.+paths: recipes
+.+paths: ores
+.+paths: tools
+.+paths: fuel
+.+paths: classes
+.+paths: java
+.+paths: blocks
+.+paths: items
+.prefix: com
+.sources: https://github.com/beckadamtheinventor/SmashingRocks
+.textures: textures
+.title: Smashing Rocks
+.version: 1
++moditems.imports: ${mod.package}.rocksmasher.RockSmasher
++resourceexecactions: actions/dirs.json
++postexecactions: actions/loot_tables.json
+
+@include equates.m3ec

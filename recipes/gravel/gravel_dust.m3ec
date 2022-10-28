@@ -1,0 +1,7 @@
+__Generated:
+@: recipe
+contentid: gravel_dust
+count: 3
++ingredients: slateblocktweaker:smashed_gravel
+recipe: ShapelessRecipe
+result: slateblocktweaker:gravel_dust

@@ -1,0 +1,12 @@
+@:          ore
+ore:
+contentid:  gravelly_silt_ore
+name:       gravelly_silt_ore
+title:      gravelly_silt_ore
+maxy:      63
+vein:
+.atbedrock:
+.block:     ModBlocks.GRAVELLY_SILT
+.size:      20
+.perchunk:  20
+OverworldOre:

@@ -1,0 +1,10 @@
+@: recipe
+contentid: diorite_cobblestone
+recipe: ShapedRecipe
++itemkeys: p
++items: ${mod.mcpath}:diorite_pebble
++pattern: "pp"
++pattern: "pp"
+result: ${diorite_cobblestone_item}
+count: 1
+

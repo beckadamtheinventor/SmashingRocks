@@ -1,0 +1,11 @@
+{
+	"type": "slateblocktweaker:rock_smashing",
+	"inputA": {
+		"item": "slateblocktweaker:cobblestone_smasher"
+	},
+	"inputB": {
+		"item": "minecraft:cobblestone"
+	},
+	"outputItem": "slateblocktweaker:smashed_stone",
+	"outputAmount": 8
+}

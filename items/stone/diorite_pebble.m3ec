@@ -1,0 +1,5 @@
+@: item
+contentid: diorite_pebble
+item: SimpleItem
+texture: diorite_pebble.png
+title: Diorite Pebble

@@ -1,0 +1,14 @@
+@: recipe
+recipe: ShapedRecipe
+contentid: reinforced_rod
++itemkeys: d
++itemkeys: b
++itemkeys: r
++items: ${mod.mcpath}:iron_dust
++items: ${mod.mcpath}:bone_dust
++items: ${mod.mcpath}:flint_rod
++pattern: " db"
++pattern: "drd"
++pattern: "rd "
+result: ${mod.mcpath}:reinforced_rod
+count: 1

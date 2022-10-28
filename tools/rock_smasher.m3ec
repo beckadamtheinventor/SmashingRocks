@@ -1,0 +1,8 @@
+@: item
+contentid: rock_smasher
+item: ToolItem
+customclass: RockSmasher
+toolmaterial: FlintToolMaterial
+texture: rock_smasher.png
+title: Rock Smasher
+extraItemSettings: .maxDamage(48)

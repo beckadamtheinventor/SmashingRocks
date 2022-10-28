@@ -1,0 +1,12 @@
+@: block
+block: SimpleBlock
+contentid: gravelly_silt
+droptype: Self
+hardness: 0.6
+material: SOIL
+resistance: 0.6
+sounds: GRAVEL
+texture: gravelly_silt.png
+title: Gravelly Silt
+toolclass: SHOVEL
+toollevel: NONE

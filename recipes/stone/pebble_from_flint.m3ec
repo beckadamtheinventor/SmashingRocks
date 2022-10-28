@@ -1,0 +1,6 @@
+@: recipe
+contentid: pebble_from_flint
+recipe: ShapelessRecipe
++ingredients: ${mod.mcpath}:flint_shard
+result: ${mod.mcpath}:pebble
+count: 1

@@ -1,0 +1,10 @@
+@: recipe
+contentid: tuff_cobblestone
+recipe: ShapedRecipe
++itemkeys: p
++items: ${mod.mcpath}:tuff_pebble
++pattern: "pp"
++pattern: "pp"
+result: ${tuff_cobblestone_item}
+count: 1
+

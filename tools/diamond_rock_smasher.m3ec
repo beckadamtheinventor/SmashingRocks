@@ -1,0 +1,7 @@
+@: item
+contentid: diamond_rock_smasher
+item: ToolItem
+customclass: RockSmasher
+texture: diamond_rock_smasher.png
+title: Diamond Rock Smasher
+extraItemSettings: .maxDamage(2048)

@@ -1,0 +1,7 @@
+@: recipe
+recipe: BlastingRecipe
+contentid: raw_gold_blasting
+ingredient: ${mod.mcpath}:gold_pebble
+result: minecraft:raw_gold
+experience: 2.0
+time: 100

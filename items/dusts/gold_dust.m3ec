@@ -1,0 +1,5 @@
+@: item
+contentid: gold_dust
+item: SimpleItem
+texture: gold_dust.png
+title: Gold Dust

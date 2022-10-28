@@ -1,0 +1,7 @@
+@: recipe
+recipe: SmeltingRecipe
+contentid: raw_iron
+ingredient: ${mod.mcpath}:iron_pebble
+result: minecraft:raw_iron
+experience: 1.0
+time: 200

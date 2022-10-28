@@ -1,0 +1,9 @@
+@: recipe
+recipe: ShapedRecipe
+contentid: flint_rod
++itemkeys: f
++items: ${mod.mcpath}:flint_shard
++pattern: "f"
++pattern: "f"
+result: ${mod.mcpath}:flint_rod
+count: 2

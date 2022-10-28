@@ -1,0 +1,10 @@
+@: recipe
+contentid: calcite_cobblestone
+recipe: ShapedRecipe
++itemkeys: p
++items: ${mod.mcpath}:calcite_pebble
++pattern: "pp"
++pattern: "pp"
+result: ${calcite_cobblestone_item}
+count: 1
+

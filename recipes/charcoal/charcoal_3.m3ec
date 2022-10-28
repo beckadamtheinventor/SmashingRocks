@@ -1,0 +1,8 @@
+@: recipe
+recipe: ShapelessRecipe
+contentid: charcoal
++ingredients: ${mod.mcpath}:ash_pile
++ingredients: ${mod.mcpath}:ash_pile
++ingredients: minecraft:charcoal
+result: minecraft:charcoal
+count: 2

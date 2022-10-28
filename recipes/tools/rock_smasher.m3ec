@@ -1,0 +1,11 @@
+@: recipe
+recipe: ShapedRecipe
+contentid: rock_smasher
++itemkeys: f
++itemkeys: r
++items: ${mod.mcpath}:flint_shard
++items: ${mod.mcpath}:flint_rod
++pattern: " f"
++pattern: "r "
+result: ${mod.mcpath}:rock_smasher
+count: 1

@@ -1,0 +1,14 @@
+@: recipe
+recipe: ShapedRecipe
+contentid: charcoal_dust_block
++pattern: "cdc"
++pattern: "dgd"
++pattern: "cdc"
++itemkeys: d
++items: ${mod.mcpath}:dust_block
++itemkeys: g
++items: ${mod.mcpath}:gravel_dust
++itemkeys: c
++items: minecraft:charcoal
+result: ${mod.mcpath}:charcoal_dust_block
+count: 4

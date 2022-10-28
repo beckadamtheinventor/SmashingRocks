@@ -1,0 +1,7 @@
+@: recipe
+recipe: BlastingRecipe
+contentid: raw_iron_blasting
+ingredient: ${mod.mcpath}:iron_pebble
+result: minecraft:raw_iron
+experience: 1.0
+time: 100

@@ -1,0 +1,14 @@
+@: recipe
+contentid: flint_pickaxe
+count: 1
++itemkeys: A
++itemkeys: B
++itemkeys: C
++items: smashingrocks:flint_rod
++items: smashingrocks:flint_plate
++items: smashingrocks:flint_shard
++pattern: "CBC"
++pattern: " A "
++pattern: " A "
+recipe: ShapedRecipe
+result: smashingrocks:flint_stone_pickaxe

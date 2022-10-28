@@ -1,0 +1,9 @@
+@: recipe
+recipe: ShapedRecipe
+contentid: bone_meal
++itemkeys: b
++items: slateblocktweaker:bone_dust
++pattern: "bb"
++pattern: "bb"
+result: minecraft:bone_meal
+count: 1

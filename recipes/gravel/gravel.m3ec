@@ -1,0 +1,6 @@
+@: recipe
+recipe: ShapelessRecipe
+contentid: gravel
++ingredients: slateblocktweaker:gravelly_silt
+result: minecraft:gravel
+count: 1

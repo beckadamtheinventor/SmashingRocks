@@ -1,0 +1,12 @@
+@: block
+block: SimpleBlock
+contentid: dust_block
+droptype: Self
+hardness: 0.6
+material: SOIL
+resistance: 0.6
+sounds: SAND
+texture: dust_block.png
+title: Dust Block
+toolclass: SHOVEL
+toollevel: NONE

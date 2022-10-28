@@ -1,0 +1,7 @@
+@: recipe
+recipe: ShapelessRecipe
+contentid: flint_shard_2
++ingredients: minecraft:gravel
++ingredients: minecraft:gravel
+result: ${mod.mcpath}:flint_shard
+count: 2

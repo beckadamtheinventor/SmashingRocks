@@ -1,0 +1,9 @@
+@: recipe
+recipe: ShapelessRecipe
+contentid: iron_pebble
++ingredients: ${mod.mcpath}:iron_dust
++ingredients: ${mod.mcpath}:iron_dust
++ingredients: ${mod.mcpath}:iron_dust
++ingredients: ${mod.mcpath}:iron_dust
+result: ${mod.mcpath}:iron_pebble
+count: 1

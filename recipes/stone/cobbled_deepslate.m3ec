@@ -1,0 +1,10 @@
+@: recipe
+contentid: cobbled_deepslate
+recipe: ShapedRecipe
++itemkeys: p
++items: ${mod.mcpath}:deepslate_pebble
++pattern: "pp"
++pattern: "pp"
+result: minecraft:cobbled_deepslate
+count: 1
+

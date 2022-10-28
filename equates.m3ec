@@ -1,0 +1,21 @@
+
++sapling_types: oak
++sapling_types: spruce
++sapling_types: acacia
++sapling_types: birch
++sapling_types: jungle
++sapling_types: dark_oak
+
++pebble_items:  pebble
++pebble_items:  andesite_pebble
++pebble_items:  diorite_pebble
++pebble_items:  granite_pebble
++pebble_items:  deepslate_pebble
++pebble_items:  calcite_pebble
++pebble_items:  tuff_pebble
+
+andesite_cobblestone_item:         consistency_plus:cobbled_andesite
+diorite_cobblestone_item:          consistency_plus:cobbled_diorite
+granite_cobblestone_item:          consistency_plus:cobbled_granite
+calcite_cobblestone_item:          consistency_plus:cobbled_calcite
+tuff_cobblestone_item:             consistency_plus:cobbled_tuff

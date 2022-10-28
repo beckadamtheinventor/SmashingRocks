@@ -1,0 +1,12 @@
+@: recipe
+recipe: ShapedRecipe
+contentid: diamond_rock_smasher
++itemkeys: d
++itemkeys: r
++items: minecraft:diamond
++items: ${mod.mcpath}:reinforced_rod
++pattern: "  d"
++pattern: " r "
++pattern: "r  "
+result: ${mod.mcpath}:diamond_rock_smasher
+count: 1

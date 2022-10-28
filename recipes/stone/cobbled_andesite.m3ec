@@ -1,0 +1,10 @@
+@: recipe
+contentid: andesite_cobblestone
+recipe: ShapedRecipe
++itemkeys: p
++items: ${mod.mcpath}:andesite_pebble
++pattern: "pp"
++pattern: "pp"
+result: ${andesite_cobblestone_item}
+count: 1
+

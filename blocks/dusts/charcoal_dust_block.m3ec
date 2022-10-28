@@ -1,0 +1,12 @@
+@: block
+block: SimpleBlock
+contentid: charcoal_dust_block
+droptype: Self
+hardness: ${mc.sand.hardness}
+material: SOIL
+resistance: ${mc.sand.resistance}
+sounds: SAND
+texture: charcoal_dust_block.png
+title: Charcoal Dust Block
+toolclass: SHOVELS
+toollevel: STONE

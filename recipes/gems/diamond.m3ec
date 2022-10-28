@@ -1,0 +1,9 @@
+@: recipe
+recipe: ShapedRecipe
+contentid: diamond
++itemkeys: d
++items: slateblocktweaker:diamond_dust
++pattern: "dd"
++pattern: "dd"
+result: minecraft:diamond
+count: 1

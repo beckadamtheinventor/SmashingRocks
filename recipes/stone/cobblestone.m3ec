@@ -1,0 +1,10 @@
+@: recipe
+contentid: cobblestone
+recipe: ShapedRecipe
++itemkeys: p
++items: ${mod.mcpath}:pebble
++pattern: "pp"
++pattern: "pp"
+result: minecraft:cobblestone
+count: 1
+

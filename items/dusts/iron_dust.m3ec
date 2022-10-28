@@ -1,0 +1,5 @@
+@: item
+contentid: iron_dust
+item: SimpleItem
+texture: iron_dust.png
+title: Iron Dust
