@@ -29,7 +29,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "slateblocktweaker:granite_pebble",
+              "name": "${mod.mcpath}:granite_pebble",
               "functions": [
                 {
                   "function": "minecraft:set_count",

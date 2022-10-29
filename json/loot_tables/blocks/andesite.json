@@ -29,7 +29,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "slateblocktweaker:andesite_pebble",
+              "name": "${mod.mcpath}:andesite_pebble",
               "functions": [
                 {
                   "function": "minecraft:set_count",

@@ -1,5 +1,5 @@
 @: recipe
 contentid: masonstone_bricks_2
-ingredient: slateblocktweaker:mason_stone
+ingredient: ${mod.mcpath}:mason_stone
 recipe: StoneCuttingRecipe
-result: slateblocktweaker:masonstone_bricks
+result: ${mod.mcpath}:masonstone_bricks

@@ -29,7 +29,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "slateblocktweaker:diorite_pebble",
+              "name": "${mod.mcpath}:diorite_pebble",
               "functions": [
                 {
                   "function": "minecraft:set_count",

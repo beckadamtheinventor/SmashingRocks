@@ -2,7 +2,7 @@
 recipe: ShapedRecipe
 contentid: diamond
 +itemkeys: d
-+items: slateblocktweaker:diamond_dust
++items: ${mod.mcpath}:diamond_dust
 +pattern: "dd"
 +pattern: "dd"
 result: minecraft:diamond

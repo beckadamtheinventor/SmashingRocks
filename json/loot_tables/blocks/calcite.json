@@ -29,7 +29,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "slateblocktweaker:calcite_pebble",
+              "name": "${mod.mcpath}:calcite_pebble",
               "functions": [
                 {
                   "function": "minecraft:set_count",

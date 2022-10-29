@@ -29,7 +29,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "slateblocktweaker:deepslate_pebble",
+              "name": "${mod.mcpath}:deepslate_pebble",
               "functions": [
                 {
                   "function": "minecraft:set_count",

@@ -29,7 +29,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "slateblocktweaker:tuff_pebble",
+              "name": "${mod.mcpath}:tuff_pebble",
               "functions": [
                 {
                   "function": "minecraft:set_count",

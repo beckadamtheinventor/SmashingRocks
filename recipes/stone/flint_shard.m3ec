@@ -6,4 +6,4 @@ count: 2
 +items: minecraft:flint
 +pattern: " A"
 recipe: ShapedRecipe
-result: slateblocktweaker:flint_shard
+result: ${mod.mcpath}:flint_shard
