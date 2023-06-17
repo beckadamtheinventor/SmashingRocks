@@ -1,0 +1,5 @@
+@: class
+file: java/RockSmasherRecipeManager.java
+class: ${mod.package}.rocksmasher.RockSmasherRecipeManager
+modloader: fabric
++gameversions: 1.18.2

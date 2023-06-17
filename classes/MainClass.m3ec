@@ -1,0 +1,5 @@
+@: class
+file: java/MainClass.java
+class: ${mod.package}.${mod.class}
+modloader: fabric
++gameversions: 1.18.2

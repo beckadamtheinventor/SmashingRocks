@@ -10,12 +10,12 @@ mod:
 .package: com.beckati.smashingrocks
 .+paths: recipes
 .+paths: ores
+.+paths: blocks
+.+paths: items
 .+paths: tools
 .+paths: fuel
 .+paths: classes
 .+paths: java
-.+paths: blocks
-.+paths: items
 .prefix: com
 .sources: https://github.com/beckadamtheinventor/SmashingRocks
 .textures: textures

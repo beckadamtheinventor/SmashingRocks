@@ -1,72 +1,78 @@
 package ${mod.package}.rocksmasher;
 
-import ${mod.package}.registry.ModItems;
-import ${mod.package}.registry.ModBlocks;
+import com.beckati.smashingrocks.SmashingRocks;
+import com.beckati.smashingrocks.registry.ModItems;
+import com.beckati.smashingrocks.registry.ModBlocks;
 
+import com.google.gson.JsonObject;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.Material;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.Ingredient;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class RockSmasherRecipes {
-	private static final ItemStack[] leavesSecondaryOutputs = {
+	public static final ItemStack[] leavesSecondaryOutputs = {
 			new ItemStack(Items.APPLE),
 			new ItemStack(Items.STICK),
 			new ItemStack(ModItems.DAMP_MOSS),
-			new ItemStack(ModItems.ORGANIC_MASS),
 	};
-	private static final int[] leavesSecondaryChances = {
-			10, 3, 20, 1,
+	public static final int[] leavesSecondaryChances = {
+			10, 3, 20,
 	};
 
-	private static final ItemStack[] gravellySiltSecondaryOutputs = {
+	public static final ItemStack[] gravellySiltSecondaryOutputs = {
 			new ItemStack(ModItems.FLINT_SHARD),
 			new ItemStack(Items.POINTED_DRIPSTONE),
 	};
-	private static final int[] gravellySiltSecondaryChances = {
+	public static final int[] gravellySiltSecondaryChances = {
 			2, 64,
 	};
 
-	private static final ItemStack[] cobblestoneSecondaryOutputs = {
+	public static final ItemStack[] cobblestoneSecondaryOutputs = {
 			new ItemStack(Items.COARSE_DIRT),
 			new ItemStack(ModItems.PEBBLE),
 			new ItemStack(Items.FLINT),
 	};
-	private static final int[] cobblestoneSecondaryOutputChances = {
+	public static final int[] cobblestoneSecondaryOutputChances = {
 			10, 2, 8,
 	};
 
-	private static final ItemStack[] cobbledDeepslateSecondaryOutputs = {
+	public static final ItemStack[] cobbledDeepslateSecondaryOutputs = {
 			new ItemStack(Items.COARSE_DIRT),
 			new ItemStack(ModItems.DEEPSLATE_PEBBLE),
 			new ItemStack(ModItems.ASH_PILE),
 	};
-	private static final int[] cobbledDeepslateSecondaryOutputChances = {
+	public static final int[] cobbledDeepslateSecondaryOutputChances = {
 			10, 2, 6,
 	};
 
-	private static final ItemStack[] gravelSecondaryOutputs = {
-			new ItemStack(Items.FLINT),
+	public static final ItemStack[] gravelSecondaryOutputs = {
 			new ItemStack(ModItems.GRAVEL_DUST),
+			new ItemStack(Items.FLINT),
 			new ItemStack(ModItems.IRON_PEBBLE),
 			new ItemStack(ModItems.GOLD_PEBBLE),
 	};
-	private static final int[] gravelSecondaryOutputChances = {
-			5, 6, 12, 20,
+	public static final int[] gravelSecondaryOutputChances = {
+			3, 5, 12, 20,
 	};
 
-	private static final ItemStack[] sandSecondaryOutputs = {
+	public static final ItemStack[] sandSecondaryOutputs = {
 			new ItemStack(ModItems.IRON_DUST),
 			new ItemStack(ModItems.GOLD_DUST),
 			new ItemStack(Items.SUGAR_CANE),
 			new ItemStack(Items.CACTUS),
 	};
-	private static final int[] sandSecondaryOutputChances = {
+	public static final int[] sandSecondaryOutputChances = {
 			8, 12, 24, 24,
 	};
 
-	private static final ItemStack[] coarseDirtSecondaryOutputs = {
+	public static final ItemStack[] coarseDirtSecondaryOutputs = {
 			new ItemStack(Items.WHEAT_SEEDS),
 			new ItemStack(Items.BEETROOT_SEEDS),
 			new ItemStack(Items.MELON_SEEDS),
@@ -87,11 +93,11 @@ public class RockSmasherRecipes {
 			new ItemStack(ModItems.GRANITE_PEBBLE),
 			new ItemStack(ModItems.DEEPSLATE_PEBBLE),
 	};
-	private static final int[] coarseDirtSecondaryOutputChances = {
+	public static final int[] coarseDirtSecondaryOutputChances = {
 			12, 16, 16, 16, 16, 16, 16, 16, 12, 12, 12, 12, 12, 11, 8, 6, 6, 6, 6, 6,
 	};
 
-	private static final ItemStack[] dirtSecondaryOutputs = {
+	public static final ItemStack[] dirtSecondaryOutputs = {
 			new ItemStack(Items.WHEAT_SEEDS),
 			new ItemStack(Items.BEETROOT_SEEDS),
 			new ItemStack(Items.MELON_SEEDS),
@@ -107,51 +113,99 @@ public class RockSmasherRecipes {
 			new ItemStack(Items.DARK_OAK_SAPLING),
 			new ItemStack(Items.CLAY_BALL),
 	};
-	private static final int[] dirtSecondaryOutputChances = {
+	public static final int[] dirtSecondaryOutputChances = {
 			12, 16, 16, 16, 16, 16, 16, 16, 12, 12, 12, 12, 12, 11, 8,
 	};
 
-	private static final ItemStack[] charcoalDustBlockOutputs = {
+	public static final ItemStack[] charcoalDustBlockOutputs = {
 			new ItemStack(ModItems.DIAMOND_DUST),
 			new ItemStack(ModItems.DIAMOND_DUST),
 			new ItemStack(ModItems.ASH_PILE),
 			new ItemStack(ModItems.CARBON_COATED_PEBBLE),
 	};
-	private static final int[] charcoalDustBlockOutputChances = {
+	public static final int[] charcoalDustBlockOutputChances = {
 			4, 4, 2, 4,
 	};
 
-	private static final ItemStack[] dustBlockSecondaryOutputs = {
+	public static final ItemStack[] dustBlockSecondaryOutputs = {
 			new ItemStack(ModItems.BONE_DUST),
 			new ItemStack(ModItems.IRON_DUST),
 			new ItemStack(Items.CLAY_BALL),
 	};
-	private static final int[] dustBlockSecondaryOutputChances = {
+	public static final int[] dustBlockSecondaryOutputChances = {
 			2, 5, 2,
 	};
 
-	private static final ItemStack[] clayBlockSecondaryOutputs = {
+	public static final ItemStack[] clayBlockSecondaryOutputs = {
 			new ItemStack(ModItems.BONE_DUST),
+			new ItemStack(Items.CLAY_BALL),
 			new ItemStack(Items.CLAY_BALL),
 			new ItemStack(Items.CLAY_BALL),
 			new ItemStack(ModItems.TUFF_PEBBLE),
 			new ItemStack(ModItems.CALCITE_PEBBLE),
 	};
-	private static final int[] clayBlockSecondaryOutputChances = {
-			4, 5, 5, 6, 6,
+	public static final int[] clayBlockSecondaryOutputChances = {
+			4, 4, 4, 4, 4, 4,
+	};
+
+	public static final Block[] listAllLeaves = {
+			Blocks.OAK_LEAVES,
+			Blocks.BIRCH_LEAVES,
+			Blocks.ACACIA_LEAVES,
+			Blocks.JUNGLE_LEAVES,
+			Blocks.SPRUCE_LEAVES,
+			Blocks.DARK_OAK_LEAVES,
 	};
 
 	public static final RockSmasherRecipe[] recipes = {
-			new RockSmasherRecipe(Material.LEAVES, null, leavesSecondaryOutputs, leavesSecondaryChances),
-			new RockSmasherRecipe(ModBlocks.GRAVELLY_SILT.getDefaultState(), new ItemStack(ModItems.FLINT_SHARD), gravellySiltSecondaryOutputs, gravellySiltSecondaryChances),
-			new RockSmasherRecipe(Blocks.COBBLESTONE.getDefaultState(), new ItemStack(Items.GRAVEL), cobblestoneSecondaryOutputs, cobblestoneSecondaryOutputChances),
-			new RockSmasherRecipe(Blocks.COBBLED_DEEPSLATE.getDefaultState(), new ItemStack(Items.GRAVEL), cobbledDeepslateSecondaryOutputs, cobbledDeepslateSecondaryOutputChances),
-			new RockSmasherRecipe(Blocks.GRAVEL.getDefaultState(), new ItemStack(Items.SAND), gravelSecondaryOutputs, gravelSecondaryOutputChances),
-			new RockSmasherRecipe(Blocks.SAND.getDefaultState(), new ItemStack(ModItems.DUST_BLOCK), sandSecondaryOutputs, sandSecondaryOutputChances),
-			new RockSmasherRecipe(Blocks.COARSE_DIRT.getDefaultState(), null, coarseDirtSecondaryOutputs, coarseDirtSecondaryOutputChances),
-			new RockSmasherRecipe(Blocks.DIRT.getDefaultState(), null, dirtSecondaryOutputs, dirtSecondaryOutputChances),
-			new RockSmasherRecipe(ModBlocks.CHARCOAL_DUST_BLOCK.getDefaultState(), null, charcoalDustBlockOutputs, charcoalDustBlockOutputChances),
-			new RockSmasherRecipe(ModBlocks.DUST_BLOCK.getDefaultState(), null, dustBlockSecondaryOutputs, dustBlockSecondaryOutputChances),
-			new RockSmasherRecipe(Blocks.CLAY.getDefaultState(), new ItemStack(ModItems.DUST_BLOCK), clayBlockSecondaryOutputs, clayBlockSecondaryOutputChances),
+			new RockSmasherRecipe(listAllLeaves, new ItemStack(ModItems.ORGANIC_MASS), leavesSecondaryOutputs, leavesSecondaryChances),
+			new RockSmasherRecipe(ModBlocks.GRAVELLY_SILT, new ItemStack(ModItems.FLINT_SHARD), gravellySiltSecondaryOutputs, gravellySiltSecondaryChances),
+			new RockSmasherRecipe(Blocks.COBBLESTONE, new ItemStack(Items.GRAVEL), cobblestoneSecondaryOutputs, cobblestoneSecondaryOutputChances),
+			new RockSmasherRecipe(Blocks.COBBLED_DEEPSLATE, new ItemStack(Items.GRAVEL), cobbledDeepslateSecondaryOutputs, cobbledDeepslateSecondaryOutputChances),
+			new RockSmasherRecipe(Blocks.GRAVEL, new ItemStack(Items.SAND), gravelSecondaryOutputs, gravelSecondaryOutputChances),
+			new RockSmasherRecipe(Blocks.SAND, new ItemStack(ModItems.DUST_BLOCK), sandSecondaryOutputs, sandSecondaryOutputChances),
+			new RockSmasherRecipe(Blocks.COARSE_DIRT, null, coarseDirtSecondaryOutputs, coarseDirtSecondaryOutputChances),
+			new RockSmasherRecipe(Blocks.DIRT, null, dirtSecondaryOutputs, dirtSecondaryOutputChances),
+			new RockSmasherRecipe(ModBlocks.CHARCOAL_DUST_BLOCK, null, charcoalDustBlockOutputs, charcoalDustBlockOutputChances),
+			new RockSmasherRecipe(ModBlocks.DUST_BLOCK, null, dustBlockSecondaryOutputs, dustBlockSecondaryOutputChances),
+			new RockSmasherRecipe(Blocks.CLAY, new ItemStack(ModItems.DUST_BLOCK), clayBlockSecondaryOutputs, clayBlockSecondaryOutputChances),
 	};
+
+	public static final String[] recipeFileNames = {
+			"leaves",
+			"gravelly_silt",
+			"cobblestone",
+			"cobbled_deepslate",
+			"gravel",
+			"sand",
+			"coarse_dirt",
+			"dirt",
+			"charcoal_dust_block",
+			"dust_block",
+			"clay",
+	};
+
+	public static void writeDefaultRecipes(String configPath) {
+		GsonBuilder gsonBuilder = new GsonBuilder();
+		gsonBuilder.setPrettyPrinting();
+		Gson gson = gsonBuilder.create();
+		for (int i=0; i<recipes.length; i++) {
+			FileWriter fileWriter = null;
+			String path = configPath.concat(File.separator).concat(recipeFileNames[i]).concat(".json");
+			try
+			{
+				fileWriter = new FileWriter(path);
+				JsonObject obj = new JsonObject();
+				RockSmasherRecipe.Serializer.toJson(obj, recipes[i], null);
+				fileWriter.write(gson.toJson(obj));
+				fileWriter.close();
+			}
+			catch (Exception ex)
+			{
+				SmashingRocks.LOGGER.warn("Failed to write default configuration file: ".concat(path));
+				ex.printStackTrace();
+			}
+		}
+	}
+
 }

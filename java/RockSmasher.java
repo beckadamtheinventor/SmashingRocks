@@ -1,8 +1,8 @@
 package ${mod.package}.rocksmasher;
 
+import com.beckati.smashingrocks.SmashingRocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Material;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -69,17 +69,21 @@ public class RockSmasher extends Item {
 		final BlockPos pos = context.getBlockPos();
 		final BlockState block = world.getBlockState(pos);
 		RockSmasherRecipe recipe = null;
-		for (int i = 0; i < RockSmasherRecipes.recipes.length; i++) {
-			BlockState ingredient = RockSmasherRecipes.recipes[i].ingredient;
-			Material material = RockSmasherRecipes.recipes[i].ingredientMaterial;
-			if (material != null) {
-				if (block.getMaterial().equals(material)) {
-					recipe = RockSmasherRecipes.recipes[i];
-				}
-			}
-			if (ingredient != null) {
-				if (block.equals(ingredient)) {
-					recipe = RockSmasherRecipes.recipes[i];
+		int len = RockSmasherRecipeManager.recipes.toArray().length;
+		// SmashingRocks.LOGGER.info("Checking Rock Smasher recipes. There are "+len+" recipes.");
+		for (int i = 0; i < len; i++) {
+			Block[] ingredientBlocks = RockSmasherRecipeManager.recipes.get(i).ingredient;
+			// Material material = RockSmasherRecipeManager.recipes.get(i).ingredientMaterial;
+			// if (material != null) {
+				// if (block.getMaterial().equals(material)) {
+					// recipe = RockSmasherRecipeManager.recipes.get(i);
+				// }
+			// }
+			for (Block ingredient : ingredientBlocks) {
+				if (ingredient != null) {
+					if (block.getBlock().equals(ingredient)) {
+						recipe = RockSmasherRecipeManager.recipes.get(i);
+					}
 				}
 			}
 		}
