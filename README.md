@@ -19,6 +19,7 @@ Right clicking the top of a supported block with a rock smasher will smash it an
 Rock Smashing recipes can be configured in `.minecraft/config/SmashingRocks/recipes`.
 Some default recipes will be generated when the game starts if no recipes are found in the directory.
 
+Currently, due to rock smashing recipes not actually being recipes, they will only be loaded when the game starts.
 
 # Default Rock Smashing Recipes
 
