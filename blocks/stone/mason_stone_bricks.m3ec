@@ -1,14 +1,14 @@
 @: block
 block: SimpleBlock
-contentid: mason_stone
+contentid: mason_stone_bricks
 droptype: Self
-hardness: 3.0
+hardness: 3.5
 material: STONE
 requiresTool: yes
 resistance: 6.0
-sounds: DEEPSLATE
-texture: mason_stone_block.png
-title: Mason Stone
+sounds: DEEPSLATE_BRICKS
+texture: mason_stone_brick_block.png
+title: Mason Stone Bricks
 toolclass: PICKAXES
 toollevel: STONE
 

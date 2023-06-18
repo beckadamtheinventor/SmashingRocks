@@ -1,0 +1,13 @@
+@: recipe
+contentid: andesite_cobblestone
+recipe: ShapedRecipe
++itemkeys: p
++items: ${mod.mcpath}:carbon_coated_pebble
++itemkeys: s
++items: ${mod.mcpath}:mason_stone
++pattern: " p "
++pattern: "psp"
++pattern: " p "
+result: ${mod.mcpath}:carbonized_mason_stone
+count: 1
+

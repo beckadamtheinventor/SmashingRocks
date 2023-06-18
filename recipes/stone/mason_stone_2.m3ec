@@ -1,0 +1,14 @@
+@: recipe
+contentid: mason_stone_from_gravel
+recipe: ShapedRecipe
++itemkeys: s
++itemkeys: c
++itemkeys: d
++items: minecraft:gravel
++items: minecraft:cobblestone
++items: minecraft:polished_deepslate
++pattern: "scs"
++pattern: "cdc"
++pattern: "scs"
+result: ${mod.mcpath}:mason_stone
+count: 1

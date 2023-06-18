@@ -1,6 +1,6 @@
 @: recipe
-contentid: mason_brick
+contentid: mason_stone_brick
 recipe: StoneCuttingRecipe
 ingredient: ${mod.mcpath}:mason_stone
-result: ${mod.mcpath}:mason_brick
+result: ${mod.mcpath}:mason_stone_brick
 count: 4

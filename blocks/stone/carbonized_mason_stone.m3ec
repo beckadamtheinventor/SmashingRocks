@@ -1,16 +1,16 @@
 @: block
 block: SimpleBlock
-contentid: mason_stone
+contentid: carbonized_mason_stone
 droptype: Self
-hardness: 3.0
+hardness: ${mc.obsidian.hardness}
 material: STONE
 requiresTool: yes
-resistance: 6.0
+resistance: 65535
 sounds: DEEPSLATE
-texture: mason_stone_block.png
-title: Mason Stone
+texture: carbonized_mason_stone.png
+title: Carbonized Mason Stone
 toolclass: PICKAXES
-toollevel: STONE
+toollevel: IRON
 
 autogenerate:
 .stairs: yes

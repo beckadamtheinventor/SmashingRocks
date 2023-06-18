@@ -1,9 +1,9 @@
 @: recipe
-contentid: masonstone_bricks
+contentid: mason_stone_bricks
 count: 4
 +itemkeys: A
 +items: ${mod.mcpath}:mason_stone
 +pattern: "AA"
 +pattern: "AA"
 recipe: ShapedRecipe
-result: ${mod.mcpath}:masonstone_bricks
+result: ${mod.mcpath}:mason_stone_bricks
