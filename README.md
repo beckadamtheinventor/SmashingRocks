@@ -2,6 +2,7 @@
 
 A mod where you can smash rocks into resources! Finally a use for all that extra cobblestone...
 
+Also makes stone drop pebbles.
 
 # Eye Candy
 
@@ -15,6 +16,7 @@ A mod where you can smash rocks into resources! Finally a use for all that extra
 # Features
 
 Right clicking the top of a supported block with a rock smasher will smash it and return some resources.
+Additionally, various stones will drop 3 or 4 pebbles instead of cobbled stones.
 
 Rock Smashing recipes can be configured in `.minecraft/config/SmashingRocks/recipes`.
 Some default recipes will be generated when the game starts if no recipes are found in the directory.
